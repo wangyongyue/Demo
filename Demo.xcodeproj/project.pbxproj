@@ -26,6 +26,7 @@
 		18911C0522CB5110007618B0 /* LoginHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0422CB5110007618B0 /* LoginHttp.swift */; };
 		18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0622CB51DC007618B0 /* BaseNavigationController.swift */; };
 		18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0822CB51F6007618B0 /* BaseTabBarController.swift */; };
+		18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5FE7B22CF4483003C7EEA /* Configuration.swift */; };
 		B617D314845B89B19697980D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */; };
 		D44991443EF71FB9075AD326 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB92A2976401FA38EB89D96 /* Pods_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		18911C0422CB5110007618B0 /* LoginHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHttp.swift; sourceTree = "<group>"; };
 		18911C0622CB51DC007618B0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		18911C0822CB51F6007618B0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		18C5FE7B22CF4483003C7EEA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		42A35589383EFA4495DF6002 /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +140,8 @@
 			children = (
 				18911BBB22CB4281007618B0 /* AppDelegate.swift */,
 				18911BBD22CB4281007618B0 /* ViewController.swift */,
-				18911BE922CB44FD007618B0 /* other */,
+				18C5FE7A22CF4414003C7EEA /* Configuration */,
+				18911BE922CB44FD007618B0 /* Other */,
 				18911BEE22CB450F007618B0 /* Url */,
 				18911BED22CB450C007618B0 /* Resources */,
 				18911BEC22CB4509007618B0 /* Models */,
@@ -170,13 +173,13 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		18911BE922CB44FD007618B0 /* other */ = {
+		18911BE922CB44FD007618B0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				18911C0622CB51DC007618B0 /* BaseNavigationController.swift */,
 				18911C0822CB51F6007618B0 /* BaseTabBarController.swift */,
 			);
-			path = other;
+			path = Other;
 			sourceTree = "<group>";
 		};
 		18911BEA22CB4502007618B0 /* ViewControllers */ = {
@@ -245,6 +248,14 @@
 				18911BFC22CB4BD1007618B0 /* T1Cell.swift */,
 			);
 			path = tableCell;
+			sourceTree = "<group>";
+		};
+		18C5FE7A22CF4414003C7EEA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				18C5FE7B22CF4483003C7EEA /* Configuration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		541B328BABE8FA40933D1E55 /* Frameworks */ = {
@@ -500,6 +511,7 @@
 			files = (
 				18911BBE22CB4281007618B0 /* ViewController.swift in Sources */,
 				18911BF022CB465A007618B0 /* Url.swift in Sources */,
+				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
 				18911C0522CB5110007618B0 /* LoginHttp.swift in Sources */,
 				18911BFF22CB4BE9007618B0 /* C1Cell.swift in Sources */,
