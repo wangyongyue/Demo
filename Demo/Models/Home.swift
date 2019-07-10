@@ -8,7 +8,7 @@
 
 import UIKit
 import VueSwift
-class Home:HomeProtocol{
+class Home:HomeProtocol,POSTProtocol{
     
     var arrayVue: Vue = Vue()
     var indexVue: Vue = Vue()
@@ -22,35 +22,32 @@ class Home:HomeProtocol{
         
     }
     func startListen() {
-        
-        
+       
         indexVue.v_index { (index) in
             print(index)
-            
-        }
-        HomeHttp().POST(callBack: { (data) in
-            
-          dealData(data: data)
-            
-        }) { (error) in
-            
         }
         
+        POST().request(url:"",body:["id":1],http: self)
     }
-    private func dealData(data:Any){
+    
+    func POSTHttpWithData(_ data:Any){
         
-        let arr = data as! [HomeData]
-        arrayVue.v_array(false, v: { () -> Array<VueData>? in
+        arrayVue.v_array(false) { () -> Array<VueData>? in
             var array = [VueData]()
-            for value in arr{
-                
+            for i in 1...12{
                 let m = T1Model()
-                m.name = value.name
+                m.name = "sd"
                 array.append(m)
             }
             return array
-        })
+        }
     }
+    func POSTHttpWithError(_ error:String){
+        
+                
+    }
+   
+    
     
     
     
