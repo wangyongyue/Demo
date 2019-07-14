@@ -1,18 +1,18 @@
 //
-//  HomeViewController.swift
+//  ListViewController.swift
 //  Demo
 //
-//  Created by apple on 2019/7/2.
+//  Created by wangyongyue on 2019/7/11.
 //  Copyright © 2019 test. All rights reserved.
 //
 
 import UIKit
 import VueSwift
 import SnapKit
-class HomeViewController: UIViewController {
+class ListViewController: UIViewController {
     
     
-    var m:HomeProtocol?
+    var m:ListProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -42,11 +42,12 @@ class HomeViewController: UIViewController {
     }
     
 }
-protocol HomeProtocol {
+protocol ListProtocol {
     
     var arrayVue:Vue{get}
     var indexVue:Vue{get}
     func startListen()
     
 }
+
 

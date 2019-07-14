@@ -10,11 +10,12 @@ import UIKit
 
 class POST: NSObject {
     
-    func request(url:String,body:[String:Any],http:POSTProtocol){
-        
+    static func request(params:HttpProtocol,http:POSTProtocol){
+        let url = params.url
+        let body = params.getPOSTBody()
+        print(url,body)
         http.POSTHttpWithData("data")
     }
-
    
 
 }
