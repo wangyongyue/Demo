@@ -25,9 +25,12 @@ class Home:HomeProtocol,POSTProtocol{
        
         indexVue.v_index { (index) in
             print(index)
+            
         }
         
-        POST().request(url:"",body:["id":1],http: self)
+        let params = GetHomeList()
+        params.id = 10
+        POST.request(params:params, http: self)
     }
     
     func POSTHttpWithData(_ data:Any){

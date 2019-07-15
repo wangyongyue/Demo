@@ -7,5 +7,10 @@
 //
 
 import UIKit
+
+protocol HttpProtocol {
+    var url:String{get}
+    func getPOSTBody() -> [String:Any]
+}
 //http接口
 let login = "/login"
