@@ -20,9 +20,7 @@ class HomeViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         let w = self.view.frame.width
         let h = self.view.frame.height - 20
-        
-        
-        
+                
         let table = CTable()
         self.view.addSubview(table)
         table.snp.makeConstraints { (make) in
