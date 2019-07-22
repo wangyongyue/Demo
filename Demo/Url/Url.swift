@@ -12,5 +12,8 @@ protocol HttpProtocol {
     var url:String{get}
     func getPOSTBody() -> [String:Any]
 }
+//VCID
+let ARRAYID = "ArrayID"
+let INDEXID = "IndexID"
 //http接口
 let login = "/login"

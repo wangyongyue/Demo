@@ -8,50 +8,47 @@
 
 import UIKit
 import VueSwift
-class Home:HomeProtocol,POSTProtocol{
+class Home:Vue,V_ViewControllerProtocol,POSTProtocol{
     
-    var arrayVue: Vue = Vue()
-    var indexVue: Vue = Vue()
-    
-    static func getViewController(_ title:String?) -> UIViewController {
-        
+    func v_viewController() -> UIViewController{
         let vc = HomeViewController()
-        vc.m = Home()
-        vc.navigationItem.title = title
+        vc.m = self
+        vc.navigationItem.title = "home"
         return vc
         
     }
-    func startListen() {
-       
-        indexVue.v_index { (index) in
-            print(index)
-            
-        }
+    
+    override func v_start() {
         
         let params = GetHomeList()
         params.id = 10
         POST.request(params:params, http: self)
-    }
-    
-    func POSTHttpWithData(_ data:Any){
         
-        arrayVue.v_array(false) { () -> Array<VueData>? in
-            var array = [VueData]()
-            for i in 1...12{
-                let m = T1Model()
-                m.name = "sd"
-                array.append(m)
-            }
-            return array
+        self.v_index(vId: INDEXID) { (index) in
+            print(index)
         }
     }
-    func POSTHttpWithError(_ error:String){
+  
+    func POSTHttpWithData(_ httP: POSTProtocol, _ data: Any) {
         
-                
+        var array = [VueData]()
+        for i in 1...12{
+            let m = T1Model()
+            m.name = "home"
+            array.append(m)
+        }
+        self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
+            
+            return array
+            
+        }
+        
+        
+    }
+    func POSTHttpWithError(_ httP: POSTProtocol, _ error: String) {
+        
+        
     }
    
-    
-    
-    
     
 }

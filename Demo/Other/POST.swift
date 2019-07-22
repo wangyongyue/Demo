@@ -14,15 +14,15 @@ class POST: NSObject {
         let url = params.url
         let body = params.getPOSTBody()
         print(url,body)
-        http.POSTHttpWithData("data")
+        http.POSTHttpWithData(http, "data")
     }
    
 
 }
 protocol POSTProtocol {
     
-    func POSTHttpWithData(_ data:Any)
-    func POSTHttpWithError(_ error:String)
+    func POSTHttpWithData(_ httP:POSTProtocol,_ data:Any)
+    func POSTHttpWithError(_ httP:POSTProtocol,_ error:String)
 
 }
 

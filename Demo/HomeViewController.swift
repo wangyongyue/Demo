@@ -12,17 +12,13 @@ import SnapKit
 class HomeViewController: UIViewController {
     
     
-    var m:HomeProtocol?
+    var m:Vue?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-<<<<<<< HEAD
-        let w = self.view.frame.width
-        let h = self.view.frame.height - 20
-                
-=======
         
->>>>>>> babfa11f4985e75f1ff95d895c4c1fe05a9d8ea0
+        Vue.register(aClass: T1Model.classForCoder(), toClass: T1Cell.classForCoder())
+        
         let table = CTable()
         self.view.addSubview(table)
         table.snp.makeConstraints { (make) in
@@ -33,26 +29,11 @@ class HomeViewController: UIViewController {
             make.bottom.equalTo(0)
             
         }
+        table.v_array(vId: ARRAYID, vue: m)
+        table.v_index(vId: INDEXID, vue: m)
         
-        table.register([T1Cell.classForCoder()])
-        
-        if let v = m?.arrayVue{
-            table.v_array(vue: v)
-        }
-        
-        if let v = m?.indexVue{
-            table.v_index(vue: v)
-        }
-        
-        m?.startListen()
+        m?.v_start()
     }
-    
-}
-protocol HomeProtocol {
-    
-    var arrayVue:Vue{get}
-    var indexVue:Vue{get}
-    func startListen()
     
 }
 

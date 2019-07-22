@@ -20,7 +20,6 @@
 		18911BF722CB49A1007618B0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BF622CB49A1007618B0 /* Color.swift */; };
 		18911BF922CB4A80007618B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BF822CB4A80007618B0 /* HomeViewController.swift */; };
 		18911BFD22CB4BD1007618B0 /* T1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BFC22CB4BD1007618B0 /* T1Cell.swift */; };
-		18911BFF22CB4BE9007618B0 /* C1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BFE22CB4BE9007618B0 /* C1Cell.swift */; };
 		18911C0122CB4DC6007618B0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0022CB4DC6007618B0 /* Home.swift */; };
 		18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0622CB51DC007618B0 /* BaseNavigationController.swift */; };
 		18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0822CB51F6007618B0 /* BaseTabBarController.swift */; };
@@ -28,7 +27,6 @@
 		458F053922D6163300271BB4 /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F053822D6163300271BB4 /* POST.swift */; };
 		458F059522D7673600271BB4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059422D7673600271BB4 /* Login.swift */; };
 		458F059722D7678C00271BB4 /* GetHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059622D7678C00271BB4 /* GetHomeList.swift */; };
-		458F059922D76C4000271BB4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059822D76C4000271BB4 /* ListViewController.swift */; };
 		B617D314845B89B19697980D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */; };
 		D44991443EF71FB9075AD326 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB92A2976401FA38EB89D96 /* Pods_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,7 +67,6 @@
 		18911BF622CB49A1007618B0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		18911BF822CB4A80007618B0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18911BFC22CB4BD1007618B0 /* T1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T1Cell.swift; sourceTree = "<group>"; };
-		18911BFE22CB4BE9007618B0 /* C1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1Cell.swift; sourceTree = "<group>"; };
 		18911C0022CB4DC6007618B0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18911C0622CB51DC007618B0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		18911C0822CB51F6007618B0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
@@ -79,7 +76,6 @@
 		458F053822D6163300271BB4 /* POST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
 		458F059422D7673600271BB4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		458F059622D7678C00271BB4 /* GetHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeList.swift; sourceTree = "<group>"; };
-		458F059822D76C4000271BB4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B3527A4D3CA321520E453EF /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7821C1C7F7555F4E07756901 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				18911BF822CB4A80007618B0 /* HomeViewController.swift */,
-				458F059822D76C4000271BB4 /* ListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				18911BFB22CB4B72007618B0 /* tableCell */,
-				18911BFA22CB4B6F007618B0 /* collectionCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,14 +223,6 @@
 				458F059322D7672300271BB4 /* https */,
 			);
 			path = Url;
-			sourceTree = "<group>";
-		};
-		18911BFA22CB4B6F007618B0 /* collectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				18911BFE22CB4BE9007618B0 /* C1Cell.swift */,
-			);
-			path = collectionCell;
 			sourceTree = "<group>";
 		};
 		18911BFB22CB4B72007618B0 /* tableCell */ = {
@@ -519,7 +505,6 @@
 				18911BF022CB465A007618B0 /* Url.swift in Sources */,
 				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
-				18911BFF22CB4BE9007618B0 /* C1Cell.swift in Sources */,
 				18911BBC22CB4281007618B0 /* AppDelegate.swift in Sources */,
 				18911BFD22CB4BD1007618B0 /* T1Cell.swift in Sources */,
 				458F059522D7673600271BB4 /* Login.swift in Sources */,
@@ -529,7 +514,6 @@
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
-				458F059922D76C4000271BB4 /* ListViewController.swift in Sources */,
 				458F059722D7678C00271BB4 /* GetHomeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

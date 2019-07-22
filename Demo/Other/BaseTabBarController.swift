@@ -14,9 +14,9 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
-        addChildVC(childVC: Home.getViewController("主页"), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
-        addChildVC(childVC: Home.getViewController("主页"), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
-        addChildVC(childVC: Home.getViewController("主页"), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
+        addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
+        addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
+        addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
 
     }
     
