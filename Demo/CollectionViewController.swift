@@ -1,37 +1,40 @@
 //
-//  HomeViewController.swift
+//  CollectionViewController.swift
 //  Demo
 //
-//  Created by apple on 2019/7/2.
+//  Created by wangyongyue on 2019/7/28.
 //  Copyright © 2019 test. All rights reserved.
 //
 
 import UIKit
 import VueSwift
-import SnapKit
-class HomeViewController: UIViewController {
-    
+
+class CollectionViewController: UIViewController {
+
     var m:Vue?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
-        
-        
-        let table = CTable()
+
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize.init(width: WIDTH/2, height: WIDTH/2)
+        layout.scrollDirection = .vertical
+        let table = CCollection.init(frame: CGRect.zero, collectionViewLayout: layout)
         self.view.addSubview(table)
+        table.backgroundColor = UIColor.clear
         table.snp.makeConstraints { (make) in
             
-            make.top.equalTo(64)
+            make.top.equalTo(TOP)
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.bottom.equalTo(0)
-            
+
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.v_index(vId: INDEXID, vue: m)
-        
         m?.v_start()
+        
     }
+   
     
-}
 
+}

@@ -49,7 +49,6 @@ class T1Cell: UITableViewCell {
                 
                 h.v_to()
             }
-           
         }
     }
     
@@ -59,6 +58,13 @@ class T1Model: VueData{
     
    
     var name:String?
+    
+    
+    
+    
+    override func v_height() -> CGFloat {
+        return 80
+    }
 
 }
 

@@ -12,8 +12,17 @@ protocol HttpProtocol {
     var url:String{get}
     func getPOSTBody() -> [String:Any]
 }
-//VCID
+protocol ViewLoadProtocol {
+    func viewLoad()
+}
+protocol GetViewProtocol {
+    func getView() -> ViewLoadProtocol
+}
+//VUE_ID
 let ARRAYID = "ArrayID"
 let INDEXID = "IndexID"
+let TABID = "TabID"
+let TABINDEXID = "TabIndexID"
+
 //http接口
 let login = "/login"

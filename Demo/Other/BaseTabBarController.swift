@@ -15,7 +15,7 @@ class BaseTabBarController: UITabBarController {
         
         
         addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
-        addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
+        addChildVC(childVC: Menu().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
         addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.Back(), selectedImage: Image.Back())
 
     }

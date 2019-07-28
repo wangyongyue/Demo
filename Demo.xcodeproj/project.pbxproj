@@ -27,6 +27,16 @@
 		458F053922D6163300271BB4 /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F053822D6163300271BB4 /* POST.swift */; };
 		458F059522D7673600271BB4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059422D7673600271BB4 /* Login.swift */; };
 		458F059722D7678C00271BB4 /* GetHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059622D7678C00271BB4 /* GetHomeList.swift */; };
+		45985A7022ED49AC00FB19F4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A6F22ED49AC00FB19F4 /* ListViewController.swift */; };
+		45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7122ED49C700FB19F4 /* CollectionViewController.swift */; };
+		45985A7422ED49DB00FB19F4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7322ED49DB00FB19F4 /* ListView.swift */; };
+		45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7522ED49ED00FB19F4 /* CollectionView.swift */; };
+		45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7722ED4A2400FB19F4 /* Cells.swift */; };
+		45985A7A22ED50BF00FB19F4 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7922ED50BF00FB19F4 /* TabViewController.swift */; };
+		45985A7D22ED51C200FB19F4 /* TabHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7C22ED51C200FB19F4 /* TabHeaderCell.swift */; };
+		45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7E22ED51D200FB19F4 /* TabContentCell.swift */; };
+		45985A8122ED885E00FB19F4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A8022ED885E00FB19F4 /* Menu.swift */; };
+		45985A8322ED894F00FB19F4 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A8222ED894F00FB19F4 /* MenuData.swift */; };
 		B617D314845B89B19697980D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */; };
 		D44991443EF71FB9075AD326 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB92A2976401FA38EB89D96 /* Pods_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +86,16 @@
 		458F053822D6163300271BB4 /* POST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
 		458F059422D7673600271BB4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		458F059622D7678C00271BB4 /* GetHomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeList.swift; sourceTree = "<group>"; };
+		45985A6F22ED49AC00FB19F4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		45985A7122ED49C700FB19F4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		45985A7322ED49DB00FB19F4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		45985A7522ED49ED00FB19F4 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		45985A7722ED4A2400FB19F4 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		45985A7922ED50BF00FB19F4 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		45985A7C22ED51C200FB19F4 /* TabHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeaderCell.swift; sourceTree = "<group>"; };
+		45985A7E22ED51D200FB19F4 /* TabContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentCell.swift; sourceTree = "<group>"; };
+		45985A8022ED885E00FB19F4 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		45985A8222ED894F00FB19F4 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B3527A4D3CA321520E453EF /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7821C1C7F7555F4E07756901 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +199,7 @@
 				458F053822D6163300271BB4 /* POST.swift */,
 				18911C0622CB51DC007618B0 /* BaseNavigationController.swift */,
 				18911C0822CB51F6007618B0 /* BaseTabBarController.swift */,
+				45985A7722ED4A2400FB19F4 /* Cells.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -187,6 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				18911BF822CB4A80007618B0 /* HomeViewController.swift */,
+				45985A6F22ED49AC00FB19F4 /* ListViewController.swift */,
+				45985A7122ED49C700FB19F4 /* CollectionViewController.swift */,
+				45985A7322ED49DB00FB19F4 /* ListView.swift */,
+				45985A7522ED49ED00FB19F4 /* CollectionView.swift */,
+				45985A7922ED50BF00FB19F4 /* TabViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +220,7 @@
 		18911BEB22CB4505007618B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				45985A7B22ED519E00FB19F4 /* tabCell */,
 				18911BFB22CB4B72007618B0 /* tableCell */,
 			);
 			path = Views;
@@ -203,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				18911C0022CB4DC6007618B0 /* Home.swift */,
+				45985A8022ED885E00FB19F4 /* Menu.swift */,
+				45985A8222ED894F00FB19F4 /* MenuData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +277,15 @@
 				458F059622D7678C00271BB4 /* GetHomeList.swift */,
 			);
 			path = https;
+			sourceTree = "<group>";
+		};
+		45985A7B22ED519E00FB19F4 /* tabCell */ = {
+			isa = PBXGroup;
+			children = (
+				45985A7C22ED51C200FB19F4 /* TabHeaderCell.swift */,
+				45985A7E22ED51D200FB19F4 /* TabContentCell.swift */,
+			);
+			path = tabCell;
 			sourceTree = "<group>";
 		};
 		541B328BABE8FA40933D1E55 /* Frameworks */ = {
@@ -501,19 +539,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */,
 				18911BBE22CB4281007618B0 /* ViewController.swift in Sources */,
 				18911BF022CB465A007618B0 /* Url.swift in Sources */,
+				45985A7D22ED51C200FB19F4 /* TabHeaderCell.swift in Sources */,
 				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
+				45985A7422ED49DB00FB19F4 /* ListView.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
+				45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */,
+				45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */,
 				18911BBC22CB4281007618B0 /* AppDelegate.swift in Sources */,
+				45985A7A22ED50BF00FB19F4 /* TabViewController.swift in Sources */,
 				18911BFD22CB4BD1007618B0 /* T1Cell.swift in Sources */,
 				458F059522D7673600271BB4 /* Login.swift in Sources */,
 				18911BF522CB4992007618B0 /* Image.swift in Sources */,
+				45985A8122ED885E00FB19F4 /* Menu.swift in Sources */,
+				45985A7022ED49AC00FB19F4 /* ListViewController.swift in Sources */,
+				45985A8322ED894F00FB19F4 /* MenuData.swift in Sources */,
 				18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */,
 				18911BF922CB4A80007618B0 /* HomeViewController.swift in Sources */,
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
+				45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */,
 				458F059722D7678C00271BB4 /* GetHomeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

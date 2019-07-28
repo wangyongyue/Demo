@@ -1,16 +1,16 @@
 //
-//  HomeViewController.swift
+//  ListViewController.swift
 //  Demo
 //
-//  Created by apple on 2019/7/2.
+//  Created by wangyongyue on 2019/7/28.
 //  Copyright © 2019 test. All rights reserved.
 //
 
 import UIKit
 import VueSwift
-import SnapKit
-class HomeViewController: UIViewController {
-    
+
+class ListViewController: UIViewController {
+
     var m:Vue?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,7 @@ class HomeViewController: UIViewController {
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.v_index(vId: INDEXID, vue: m)
-        
         m?.v_start()
     }
-    
-}
 
+}
