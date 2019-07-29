@@ -9,12 +9,9 @@
 import UIKit
 import VueSwift
 class TabContentCell: UICollectionViewCell {
-
-   
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         
         
     }

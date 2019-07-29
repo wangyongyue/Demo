@@ -1,15 +1,14 @@
-
 //
-//  TabHeaderCell.swift
+//  PlayerVideoCell.swift
 //  Demo
 //
-//  Created by wangyongyue on 2019/7/28.
+//  Created by apple on 2019/7/29.
 //  Copyright © 2019 test. All rights reserved.
 //
 
 import UIKit
 import VueSwift
-class TabHeaderCell: UICollectionViewCell {
+class PlayerVideoCell: UICollectionViewCell {
     
     let headerLabel:UILabel = {
         let label = UILabel()
@@ -37,22 +36,23 @@ class TabHeaderCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     override func setV_Model(_ aModel: VueData) {
-        if aModel is TabHeaderCellModel{
-            let m = aModel as! TabHeaderCellModel
+        if aModel is PlayerVideoCellModel{
+            let m = aModel as! PlayerVideoCellModel
             
             headerLabel.text = m.name
             tap.v_tap {
                 m.v_identifier = 0
                 m.v_to()
             }
-
+            
         }
     }
     
 }
-class TabHeaderCellModel:VueData{
+class PlayerVideoCellModel:VueData{
     
     var name:String?
-  
+    
 }
+
 

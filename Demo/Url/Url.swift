@@ -18,6 +18,30 @@ protocol ViewLoadProtocol {
 protocol GetViewProtocol {
     func getView() -> ViewLoadProtocol
 }
+extension UIViewController{
+    
+    static func toLogin(){
+    
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let nv = BaseNavigationController.init(rootViewController: Login().v_viewController())
+        app.window?.rootViewController = nv
+        app.window?.makeKeyAndVisible()
+
+    }
+    static func toHome(){
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let tab = BaseTabBarController()
+        app.window?.rootViewController = tab;
+        app.window?.makeKeyAndVisible();
+    
+    }
+
+}
+
+
+
+
+
 //VUE_ID
 let ARRAYID = "ArrayID"
 let INDEXID = "IndexID"

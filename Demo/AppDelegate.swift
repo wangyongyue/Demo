@@ -17,10 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Cells.registerCells()
-        
-        let tab = BaseTabBarController()
-        self.window?.rootViewController = tab;
-        self.window?.makeKeyAndVisible();
+                
+        UIViewController.toHome()
         
         return true
     }

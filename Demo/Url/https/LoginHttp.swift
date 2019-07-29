@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Login:HttpProtocol{
+class LoginHttp:HttpProtocol{
  
     var url:String = "/login"
     var userName:String?
