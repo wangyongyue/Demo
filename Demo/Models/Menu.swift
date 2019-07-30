@@ -20,10 +20,8 @@ class Menu:Vue,V_ViewControllerProtocol,POSTProtocol{
     
     override func v_start() {
         
-        let params = GetHomeList()
-        params.id = 10
+        let params = TestHttp()
         POST.request(params:params, http: self)
-        
         
     }
     
@@ -69,7 +67,6 @@ class Menu:Vue,V_ViewControllerProtocol,POSTProtocol{
                 v.isL = true
 
             }
-            
             
         }
         

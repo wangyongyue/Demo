@@ -39,14 +39,12 @@ extension UIViewController{
 }
 
 
-
-
-
 //VUE_ID
 let ARRAYID = "ArrayID"
 let INDEXID = "IndexID"
 let TABID = "TabID"
 let TABINDEXID = "TabIndexID"
+let NAVBACKID = "NavBackID"
 
 //http接口
 let login = "/login"

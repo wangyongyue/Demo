@@ -44,6 +44,11 @@
 		18CF4F3922EEC77E0015EF16 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F3822EEC77E0015EF16 /* Player.swift */; };
 		18CF4F3B22EEC7860015EF16 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F3A22EEC7860015EF16 /* Photo.swift */; };
 		18CF4F3D22EEC78F0015EF16 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F3C22EEC78F0015EF16 /* Camera.swift */; };
+		18CF4F3F22F011C50015EF16 /* Registered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F3E22F011C50015EF16 /* Registered.swift */; };
+		18CF4F4122F011D00015EF16 /* Forget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F4022F011D00015EF16 /* Forget.swift */; };
+		18CF4F4322F012EB0015EF16 /* TestHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F4222F012EB0015EF16 /* TestHttp.swift */; };
+		18CF4F4522F0179A0015EF16 /* LoginOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F4422F0179A0015EF16 /* LoginOtherCell.swift */; };
+		18CF4F4722F019540015EF16 /* LoginVCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F4622F019540015EF16 /* LoginVCodeCell.swift */; };
 		458F053922D6163300271BB4 /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F053822D6163300271BB4 /* POST.swift */; };
 		458F059522D7673600271BB4 /* LoginHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059422D7673600271BB4 /* LoginHttp.swift */; };
 		458F059722D7678C00271BB4 /* GetHomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F059622D7678C00271BB4 /* GetHomeList.swift */; };
@@ -121,6 +126,11 @@
 		18CF4F3822EEC77E0015EF16 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		18CF4F3A22EEC7860015EF16 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		18CF4F3C22EEC78F0015EF16 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		18CF4F3E22F011C50015EF16 /* Registered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registered.swift; sourceTree = "<group>"; };
+		18CF4F4022F011D00015EF16 /* Forget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forget.swift; sourceTree = "<group>"; };
+		18CF4F4222F012EB0015EF16 /* TestHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHttp.swift; sourceTree = "<group>"; };
+		18CF4F4422F0179A0015EF16 /* LoginOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOtherCell.swift; sourceTree = "<group>"; };
+		18CF4F4622F019540015EF16 /* LoginVCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCodeCell.swift; sourceTree = "<group>"; };
 		42A35589383EFA4495DF6002 /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		458F053822D6163300271BB4 /* POST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
@@ -201,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				18CF4F3622EEC7760015EF16 /* Login.swift */,
+				18CF4F3E22F011C50015EF16 /* Registered.swift */,
+				18CF4F4022F011D00015EF16 /* Forget.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -430,6 +442,8 @@
 				18CF4F1822EEC4660015EF16 /* LoginPasswordCell.swift */,
 				18CF4F1A22EEC48A0015EF16 /* LoginForgetButtonCell.swift */,
 				18CF4F1C22EEC49A0015EF16 /* LoginButtonCell.swift */,
+				18CF4F4422F0179A0015EF16 /* LoginOtherCell.swift */,
+				18CF4F4622F019540015EF16 /* LoginVCodeCell.swift */,
 			);
 			path = loginCells;
 			sourceTree = "<group>";
@@ -439,6 +453,7 @@
 			children = (
 				458F059422D7673600271BB4 /* LoginHttp.swift */,
 				458F059622D7678C00271BB4 /* GetHomeList.swift */,
+				18CF4F4222F012EB0015EF16 /* TestHttp.swift */,
 			);
 			path = https;
 			sourceTree = "<group>";
@@ -713,10 +728,12 @@
 				45985A7D22ED51C200FB19F4 /* TabHeaderCell.swift in Sources */,
 				18CF4F2B22EEC5790015EF16 /* PlayerImageCell.swift in Sources */,
 				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
+				18CF4F4522F0179A0015EF16 /* LoginOtherCell.swift in Sources */,
 				45985A7422ED49DB00FB19F4 /* ListView.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
 				45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */,
 				18CF4F1922EEC4660015EF16 /* LoginPasswordCell.swift in Sources */,
+				18CF4F4722F019540015EF16 /* LoginVCodeCell.swift in Sources */,
 				45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */,
 				18CF4F1B22EEC48A0015EF16 /* LoginForgetButtonCell.swift in Sources */,
 				18CF4F1722EEC44D0015EF16 /* LoginUsernameCell.swift in Sources */,
@@ -725,6 +742,7 @@
 				45985A7A22ED50BF00FB19F4 /* TabViewController.swift in Sources */,
 				18CF4F3322EEC7590015EF16 /* Setting.swift in Sources */,
 				18911BFD22CB4BD1007618B0 /* T1Cell.swift in Sources */,
+				18CF4F3F22F011C50015EF16 /* Registered.swift in Sources */,
 				18CF4F2122EEC4C60015EF16 /* MineHeaderCell.swift in Sources */,
 				458F059522D7673600271BB4 /* LoginHttp.swift in Sources */,
 				18911BF522CB4992007618B0 /* Image.swift in Sources */,
@@ -738,9 +756,11 @@
 				18CF4F2322EEC51C0015EF16 /* MineToCell.swift in Sources */,
 				18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */,
 				18911BF922CB4A80007618B0 /* HomeViewController.swift in Sources */,
+				18CF4F4122F011D00015EF16 /* Forget.swift in Sources */,
 				18CF4F2F22EEC69E0015EF16 /* TableContentCell.swift in Sources */,
 				18CF4F2722EEC5490015EF16 /* SettingCell.swift in Sources */,
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
+				18CF4F4322F012EB0015EF16 /* TestHttp.swift in Sources */,
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
 				45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */,

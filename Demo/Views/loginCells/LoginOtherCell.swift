@@ -1,23 +1,19 @@
 //
-//  LoginButtonCell.swift
+//  LoginOtherCell.swift
 //  Demo
 //
-//  Created by apple on 2019/7/29.
+//  Created by apple on 2019/7/30.
 //  Copyright © 2019 test. All rights reserved.
 //
 
 import UIKit
 
 import VueSwift
-class LoginButtonCell: UITableViewCell {
+class LoginOtherCell: UITableViewCell {
     
     let label:UILabel = {
         let a = UILabel()
         a.textAlignment = .center
-        a.textColor = UIColor.white
-        a.backgroundColor = UIColor.red
-        a.layer.cornerRadius = 20
-        a.layer.masksToBounds = true
         return a
     }()
     
@@ -31,12 +27,15 @@ class LoginButtonCell: UITableViewCell {
         
         label.snp.makeConstraints { (make) in
             
-            make.left.equalTo(20)
-            make.right.equalTo(-20)
-            make.height.equalTo(40)
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(30)
             make.bottom.equalTo(0)
             
         }
+        
+        
         
     }
     required init?(coder aDecoder: NSCoder) {
@@ -44,9 +43,9 @@ class LoginButtonCell: UITableViewCell {
     }
     override func setV_Model(_ aModel: VueData) {
         
-        if aModel is LoginButtonCellModel{
+        if aModel is LoginOtherCellModel{
             
-            let h = aModel as! LoginButtonCellModel
+            let h = aModel as! LoginOtherCellModel
             label.text = h.name
             tap.v_tap {
                 
@@ -57,19 +56,18 @@ class LoginButtonCell: UITableViewCell {
     
     
 }
-class LoginButtonCellModel: VueData{
+class LoginOtherCellModel: VueData{
     
     
     var name:String?
     
-    
-    
-    
     override func v_height() -> CGFloat {
         return 80
     }
+
     
 }
+
 
 
 

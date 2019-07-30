@@ -12,6 +12,8 @@ class LoginForgetButtonCell: UITableViewCell {
     
     let label:UILabel = {
         let a = UILabel()
+        a.textAlignment = .right
+        a.textColor = UIColor.red
         return a
     }()
     
@@ -27,8 +29,7 @@ class LoginForgetButtonCell: UITableViewCell {
             
             make.top.equalTo(0)
             make.left.equalTo(0)
-            make.right.equalTo(0)
-            make.height.equalTo(30)
+            make.right.equalTo(-20)
             make.bottom.equalTo(0)
             
         }
@@ -63,7 +64,7 @@ class LoginForgetButtonCellModel: VueData{
     
     
     override func v_height() -> CGFloat {
-        return 80
+        return 30
     }
     
 }

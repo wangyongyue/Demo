@@ -17,6 +17,8 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
     var line = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
 
         let tabLayout = UICollectionViewFlowLayout()
         tabLayout.itemSize = CGSize.init(width: WIDTH/6, height: 50)

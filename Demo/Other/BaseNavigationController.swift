@@ -14,17 +14,13 @@ class BaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.interactivePopGestureRecognizer?.isEnabled = true
+        
+        self.navigationBar.backgroundColor = UIColor.white
+        //背景颜色
+        let dict:NSDictionary = [NSAttributedString.Key.backgroundColor: UIColor.clear,NSAttributedString.Key.foregroundColor: UIColor.black,NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)]
+        //标题颜色
+        self.navigationBar.titleTextAttributes = dict as? [NSAttributedString.Key : AnyObject]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -26,3 +26,17 @@ protocol POSTProtocol {
 
 }
 
+class Debug: NSObject {
+    
+    static func log<T>(_ message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)
+    {
+        #if DEBUG
+        // 要把路径最后的字符串截取出来
+        let fName = ((fileName as NSString).pathComponents.last!)
+        print("\(fName).\(methodName)[\(lineNumber)]: \(message)")
+        #else
+        #endif
+    }
+    
+    
+}

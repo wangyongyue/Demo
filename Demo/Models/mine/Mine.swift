@@ -11,36 +11,65 @@ import UIKit
 import VueSwift
 class Mine:Vue,V_ViewControllerProtocol,POSTProtocol{
     
+    var array = [VueData]()
+
     func v_viewController() -> UIViewController{
-        let vc = HomeViewController()
+        let vc = ListViewController()
         vc.m = self
-        vc.navigationItem.title = "home"
+        vc.navigationItem.title = "我的"
         return vc
         
     }
     
     override func v_start() {
         
-        let params = GetHomeList()
-        params.id = 10
+        let params = TestHttp()
         POST.request(params:params, http: self)
         
         self.v_index(vId: INDEXID) { (index) in
-            print(index)
+            Debug.log(index)
+            
+            if index == 4{
+                
+                Router.push(Setting(), nil, nil)
+            }
+            
         }
+        
+        self.v_if(vId: NAVBACKID) { () -> Bool? in
+            
+            return true
+        }
+        
     }
     
     func POSTHttpWithData(_ httP: POSTProtocol, _ data: Any) {
         
-        var array = [VueData]()
-        for i in 1...12{
-            let m = T1Model()
-            m.name = "home"
-            array.append(m)
-        }
+        
+        let header = MineHeaderCellModel()
+        header.name = "我的"
+        
+        let to1 = MineToCellModel()
+        to1.name = "设置"
+        
+        let to2 = MineToCellModel()
+        to2.name = "设置"
+        
+        let to3 = MineToCellModel()
+        to3.name = "设置"
+        
+        let to4 = MineToCellModel()
+        to4.name = "设置"
+        
+        array.append(header)
+        array.append(to1)
+        array.append(to2)
+        array.append(to3)
+        array.append(to4)
+
         self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
             
-            return array
+            return self.array
             
         }
         

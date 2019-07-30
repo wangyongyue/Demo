@@ -15,6 +15,12 @@ class LoginUsernameCell: UITableViewCell {
         let a = UILabel()
         return a
     }()
+    let textField:UITextField = {
+        let field = UITextField()
+        field.textColor = UIColor.black
+        field.borderStyle = .none
+        return field
+    }()
     
     let tap = UITapGestureRecognizer()
     
@@ -23,18 +29,25 @@ class LoginUsernameCell: UITableViewCell {
         
         self.contentView.addSubview(label)
         self.contentView.addGestureRecognizer(tap)
-        
+        self.contentView.addSubview(textField)
+
         label.snp.makeConstraints { (make) in
             
             make.top.equalTo(0)
-            make.left.equalTo(0)
-            make.right.equalTo(0)
-            make.height.equalTo(30)
+            make.left.equalTo(20)
+            make.left.equalTo(80)
             make.bottom.equalTo(0)
             
         }
         
-        
+        textField.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(0)
+            make.left.equalTo(100)
+            make.right.equalTo(-20)
+            make.bottom.equalTo(0)
+            
+        }
         
     }
     required init?(coder aDecoder: NSCoder) {
@@ -46,6 +59,11 @@ class LoginUsernameCell: UITableViewCell {
             
             let h = aModel as! LoginUsernameCellModel
             label.text = h.name
+            textField.placeholder = h.placeholder
+            textField.v_change {
+                
+                h.input = self.textField.text
+            }
             tap.v_tap {
                 
                 h.v_to()
@@ -59,12 +77,14 @@ class LoginUsernameCellModel: VueData{
     
     
     var name:String?
-    
+    var placeholder:String?
+    var input:String?
+
     
     
     
     override func v_height() -> CGFloat {
-        return 80
+        return 50
     }
     
 }

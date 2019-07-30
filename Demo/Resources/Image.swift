@@ -13,5 +13,11 @@ class Image{
     static func Back() -> UIImage?{
         return UIImage(named: "back")
     }
-
+    static func mine() -> UIImage?{
+        return UIImage(named: "mine")
+    }
+    static func mine_sel() -> UIImage?{
+        return UIImage(named: "mine_sel")
+    }
+    
 }

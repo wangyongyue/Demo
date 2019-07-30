@@ -27,8 +27,14 @@ class Cells: NSObject {
         Vue.register(aClass: SettingCellModel.classForCoder(), toClass: SettingCell.classForCoder())
         Vue.register(aClass: PhotoCellModel.classForCoder(), toClass: PhotoCell.classForCoder())
         Vue.register(aClass: PlayerImageCellModel.classForCoder(), toClass: PlayerImageCell.classForCoder())
-        Vue.register(aClass: TableBannerCell.classForCoder(), toClass: TableContentCellModel.classForCoder())
-       
+        Vue.register(aClass: TableContentCellModel.classForCoder(), toClass: TableContentCell.classForCoder())
+        Vue.register(aClass: LoginOtherCellModel.classForCoder(), toClass: LoginOtherCell.classForCoder())
+        Vue.register(aClass: LoginVCodeCellModel.classForCoder(), toClass: LoginVCodeCell.classForCoder())
+
+        
+        
+        
+        
 
     }
 }

@@ -29,6 +29,27 @@ class ListViewController: UIViewController {
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.v_index(vId: INDEXID, vue: m)
+        
+        
+        //返回
+        let button = UIButton()
+        button.setImage(Image.Back(), for: .normal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: button)
+        button.v_click {
+            
+            Router.pop(nil)
+        }
+        
+        m?.v_if(vId: NAVBACKID, v: { (isF) in
+            
+            if isF{
+                
+                self.navigationItem.leftBarButtonItem = nil
+            }
+        })
+        
+        
+        
         m?.v_start()
     }
 

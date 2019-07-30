@@ -9,37 +9,56 @@
 import UIKit
 import VueSwift
 class Setting:Vue,V_ViewControllerProtocol,POSTProtocol{
-    
+    var array = [VueData]()
+
     func v_viewController() -> UIViewController{
-        let vc = HomeViewController()
+        let vc = ListViewController()
         vc.m = self
-        vc.navigationItem.title = "home"
+        vc.navigationItem.title = "设置"
         return vc
         
     }
     
     override func v_start() {
         
-        let params = GetHomeList()
-        params.id = 10
+        let params = TestHttp()
         POST.request(params:params, http: self)
         
         self.v_index(vId: INDEXID) { (index) in
-            print(index)
+            
+            if index == 4{
+                
+                UIViewController.toLogin()
+            }
         }
     }
     
     func POSTHttpWithData(_ httP: POSTProtocol, _ data: Any) {
         
-        var array = [VueData]()
-        for i in 1...12{
-            let m = T1Model()
-            m.name = "home"
-            array.append(m)
-        }
+        let m1 = SettingCellModel()
+        m1.name = "setting"
+        
+        let m2 = SettingCellModel()
+        m2.name = "setting"
+        
+        let m3 = SettingCellModel()
+        m3.name = "setting"
+        
+        let m4 = SettingCellModel()
+        m4.name = "setting"
+        
+        let m5 = SettingCellModel()
+        m5.name = "out"
+        
+        array.append(m1)
+        array.append(m2)
+        array.append(m3)
+        array.append(m4)
+        array.append(m5)
+
         self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
             
-            return array
+            return self.array
             
         }
         
